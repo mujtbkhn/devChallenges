@@ -9,6 +9,10 @@
     <link rel="icon" href="data:;base64,iVBORw0KGgo=">
     <script src="script.js"></script>
     <audio id="audio" src="assets/"></audio>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:wght@100;300;400;500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+    </style>
 </head>
 
 <body>
@@ -23,23 +27,22 @@
                 <div class="song-name"></div>
                 <div class="artist"></div>
             </div>
-            <!-- <div class="progress-bar">
-             <audio controls id="audio" src="assets/lost-in-city-lights-145038.mp3"></audio>
-            </div> -->
-            <div class="play" id="controls">
+            <div class="music" id="controls">
                 <div class="audio-track">
+                    <div class="total-time"></div>
                     <div class="time">
+                        <div class="current-time"></div>
                     </div>
                 </div>
                 <div class="audio-controls">
 
-                    <div id="previous">
+                    <div id="previous" class="previous">
                         <img src="assets/Stop_and_play_fill-1.svg" alt="">
                     </div>
-                    <div id="play">
+                    <div id="play" class="play">
                         <img src="assets/Play_fill.svg" alt="">
                     </div>
-                    <div id="forward">
+                    <div id="forward" class="forward">
                         <img src="assets/Stop_and_play_fill.svg" alt="">
                     </div>
                 </div>

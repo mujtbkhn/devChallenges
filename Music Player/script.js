@@ -9,6 +9,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const time = document.querySelector('.time')
     const songName = document.querySelector('.song-name')
     const artist = document.querySelector('.artist')
+    const currentTime = document.querySelector('.current-time')
+    const totalTime = document.querySelector('.total-time')
 
     let playList = {
         0 : {
@@ -70,6 +72,15 @@ document.addEventListener('DOMContentLoaded', () => {
         let audioTime = Math.round(audio.currentTime)
         let audioLength = Math.round(audio.duration)
         time.style.width = (audioTime * 100) / audioLength + '%'
+        currentTime.innerHTML = formatTime(audio.currentTime)
+        totalTime.innerHTML = formatTime(audio.duration)
     })
+
+    function formatTime(seconds){
+        let minutes = Math.floor(seconds/60);
+        let remainingSeconds = Math.floor(seconds%60)
+        return `${minutes}:${remainingSeconds < 10 ? '0' : ''}${remainingSeconds}`;
+
+    }
 
 })  
