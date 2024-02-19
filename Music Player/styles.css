@@ -74,16 +74,14 @@ body {
 .current-time {
   color: white;
   position: absolute;
-  top: -20
-  px;
+  top: -20px;
   left: 0px;
 }
 
 .total-time {
   color: white;
   position: absolute;
-  top: -20
-  px;
+  top: -20px;
   right: 0px;
 }
 
